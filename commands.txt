@@ -1,0 +1,25 @@
+#zookeepeer
+ssh -i "stock_market.pem" ec2-user@ec2-43-204-115-188.ap-south-1.compute.amazonaws.com
+cd kafka_2.12-2.2.1
+bin/zookeeper-server-start.sh config/zookeeper.properties
+
+#kafka server in new window
+ssh -i "stock_market.pem" ec2-user@ec2-43-204-115-188.ap-south-1.compute.amazonaws.com
+export KAFKA_HEAP_OPTS="-Xmx256M -Xms128M"
+cd kafka_2.12-2.2.1
+bin/kafka-server-start.sh config/server.properties
+
+#same window for topic and Producer
+------------Topic--------------
+
+/bin/kafka-console-producer.sh --broker-list 43.204.115.188:9092 --topic test
+
+------------Producer-----------
+ssh -i "stock_market.pem" ec2-user@ec2-43-204-115-188.ap-south-1.compute.amazonaws.com
+cd kafka_2.12-2.2.1
+bin/kafka-console-producer.sh --topic test --broker-list 43.204.115.188:9092
+
+#new window for consumer
+ssh -i "stock_market.pem" ec2-user@ec2-43-204-115-188.ap-south-1.compute.amazonaws.com
+cd kafka_2.12-2.2.1
+bin/kafka-console-consumer.sh --topic test --bootstrap-server 43.204.115.188:9092
