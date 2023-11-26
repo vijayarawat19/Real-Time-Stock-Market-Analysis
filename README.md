@@ -30,6 +30,4 @@ Integration with Amazon S3 entails pushing relevant data from Kafka consumers to
 ### Results
 #### Starting the kafka server
 ![Starting the kafka server](Real-Time-Stock-Market-Analysis/Starting kafka server.png)
-
-
 ### Kafka Producers and Consumers
