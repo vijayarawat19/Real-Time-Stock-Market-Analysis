@@ -27,3 +27,9 @@ Subscribed to topics, process and analyze incoming data in real-time.
 Extends the pipeline by integrating with Amazon S3 for persistent storage of analyzed stock market data.
 ### Interaction with S3 Buckets
 Integration with Amazon S3 entails pushing relevant data from Kafka consumers to S3 buckets. This step archives and stores valuable insights, supporting historical analysis and ensuring data availability beyond the real-time processing phase.
+### Results
+#### Starting the kafka server
+![Starting the kafka server](Starting the kafka server.png)
+
+
+### Kafka Producers and Consumers
