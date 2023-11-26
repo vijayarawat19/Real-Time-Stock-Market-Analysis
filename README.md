@@ -29,7 +29,7 @@ Extends the pipeline by integrating with Amazon S3 for persistent storage of ana
 Integration with Amazon S3 entails pushing relevant data from Kafka consumers to S3 buckets. This step archives and stores valuable insights, supporting historical analysis and ensuring data availability beyond the real-time processing phase.
 ### Results
 #### Starting the kafka server
-![Starting the kafka server](Starting the kafka server.png)
+![Starting the kafka server](Real-Time-Stock-Market-Analysis/Starting kafka server.png)
 
 
 ### Kafka Producers and Consumers
