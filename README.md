@@ -32,6 +32,5 @@ Integration with Amazon S3 entails pushing relevant data from Kafka consumers to
 
 ![Starting Kafka Server](Starting%20kafka%20server.png)
 ![Athena query](images/Athenaquery.png)
-Athenaquery.png
-![Starting the kafka server](Real-Time-Stock-Market-Analysis/Starting kafka server.png)
+
 ### Kafka Producers and Consumers
