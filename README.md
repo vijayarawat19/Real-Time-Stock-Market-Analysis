@@ -30,8 +30,16 @@ Integration with Amazon S3 entails pushing relevant data from Kafka consumers to
 ### Results
 #### Starting the kafka server
 
-![Starting Kafka Server](Starting%20kafka%20server.png)
-#### Starting the kafka server
-![Athena query](images/Athenaquery.png)
+![Starting Kafka Server -](Starting%20kafka%20server.png)
 
-### Kafka Producers and Consumers
+#### S3 Buckets
+![S3 buckets - ](images/S3%20buckets.png)
+
+#### Athena query
+![Athena query -](images/Athenaquery.png)
+
+#### Query Results
+![Query Results - ](images/queryResults.png)
+
+#### Resulted objects after query processing
+![Resulted objects after query processing - ](images/ResultingObjects.png)
